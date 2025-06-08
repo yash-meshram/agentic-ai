@@ -1,0 +1,22 @@
+Tools:
+Langflow
+autogen
+phidata = bild, ship and monitor agents system
+openai swarm
+crewai
+langGraph
+
+How to build ai agents
+
+
+goal = summarize and recommend stock of nvidia
+Process = 
+contack agents1st agent - ai agent get detail of stock
+2nd agent get info from news, web serach
+combine all info
+form an conculsion
+
+
+agaent interact with vector databases to ask queries and try to get specific kind of response
+
+video summarization application
