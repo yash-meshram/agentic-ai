@@ -17,7 +17,6 @@ combine all info
 form an conculsion
 
 
-goal = agaent interact with vector databases to ask queries and try to get specific kind of response
-Process = 
+agaent interact with vector databases to ask queries and try to get specific kind of response
 
-
+video summarization application
