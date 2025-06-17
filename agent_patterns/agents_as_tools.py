@@ -2,6 +2,29 @@
 # orchestrat_agent (after using agents as tool willl contsruct an response) ---> response
 # response ---> synthesizer_agent (review response, correctif needed and constract proper response)
 
+'''
+# Agent as agent v/s Agent as tool
+
+## Key Differences Summary
+Feature             Routing Agent Pattern	                    Agents-as-Tools Pattern
+------------------------------------------------------------------------------------------------------
+Agent Invocation	Chooses one agent to handle input	        Orchestrator agent calls others as tools
+Composition	        One agent per input	                        Multiple agents can be used in one step
+Control Flow	    Hard-coded or learned routing logic	        Tool-using agent controls the flow
+Use Case Fit	    Best for simple decision-based delegation	Best for complex, multi-step, composable tasks
+Agent Autonomy	    Full autonomy per agent	                    Tool agents are used by a controlling agent
+
+## When to Use Which?
+Routing Agent Pattern:
+If each user query clearly maps to only one agent/task.
+If agents should operate independently or asynchronously.
+
+Agents-as-Tools Pattern:
+If you need agent collaboration, tool use, or workflow composition.
+If you want LLM reasoning to drive tool/agent selection dynamically.
+'''
+
+
 from agents import Agent, Runner, trace, MessageOutputItem, ItemHelpers
 import asyncio
 
